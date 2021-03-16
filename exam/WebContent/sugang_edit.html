@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>과목수정</title>
+</head>
+<style>
+header{
+margin:0;
+margin-left: 300px;
+padding:15px;
+}
+#box1{ width: 1200px;
+height: 150px;
+background-color: gray;
+}
+h1{ position:relative;
+left: 400px;
+top: 50px;
+}
+#box2{ width: 1200px;
+height: 100px;
+background-color: gray;
+}
+li{ display: inline;
+padding: 20px;
+position:relative;
+top: 40px;} 
+a{ text-decoration:none;
+}
+a:visited{ color:black;
+}
+table{ width:1200px;
+height: 300px;
+}
+section{
+margin-left: 300px;
+padding: 15px;
+}
+#buttns{ margin-left:500px;
+			padding:20px;
+}
+footer{
+margin-left: 300px;
+padding: 15px;
+}
+#foot{ width:1200px;
+height:100px;
+border: solid 1px blue;
+}
+#copyright{ padding:10px;
+	margin-left:450px;
+}
+</style>
+<body>
+<header>
+<div id = "box1">
+	<h1>수강 신청 도우미 사이트</h1>
+</div>
+<div id = "box2">
+	<ul>
+	<li><a href = "sugang_select.jsp"></a>과목조회</li>
+	<li><a href = "sugang_add.html"></a>과목추가</li>
+	<li><a href = "sugang_edit.html"></a>과목수정</li>
+	<li><a href = "sugang_select.jsp"></a>홈으로</li>
+	</ul>
+</div>
+</header>
+<section>
+<h2>교과목 수정</h2>
+<form action= "sugang_insert.jsp">
+ <table border = "1">
+ 	<tr>
+ 		<th>교과목 코드</th>
+ 		<td><input type = "text" name = "id"></td>
+ 	</tr>
+ 	<tr>	
+ 		<th>과목명</th>
+ 		<td><input type = "text" name = "name"></td>
+ 	</tr>
+ 	<tr>
+ 		<th>담당강사</th>
+ 		<td>
+ 		<select name = "lecturer">
+ 			<option>담당강사선택</option>
+ 			<option>김교수</option>
+ 			<option>이교수</option>
+ 			<option>우교수</option>
+ 			<option>최교수</option>
+ 			<option>박교수</option>
+ 		</select>
+ 		</td>
+ 	</tr>
+ 	<tr>
+ 		<th>학점</th>
+ 		<td><input type = "text" name = "credit"></td>
+ 	</tr>
+ 	<tr>
+ 		<th>요일</th>
+ 		<td>
+ 		<input type ="radio" name = "week" value = "1">월
+ 		<input type = "radio" name = "week" value = "2">화
+ 		<input type = "radio" name = "week" value = "3">수
+ 		<input type = "radio" name = "week" value = "4">목
+ 		<input type = "radio" name = "week" value = "5">금
+ 		<input type = "radio" name = "week" value = "6">토
+ 		</td>		
+ 	<tr>
+ 		<th>시작</th>
+ 		<td><input type = "text" name = "start_hour"></td>
+ 	</tr>
+ 	<tr>
+ 	<th>종료</th>
+ 		<td><input type = "text" name = "end_end"></td>
+ 	</tr>				
+ </table>
+ </div>
+<div id = "buttns">
+		<input type = "submit" value = "목록">
+ 		<input type = "submit" value = "완료"> 		
+</div>
+ </form>
+ </section>
+<footer>
+<div id = "foot">
+	<h2 id = "copyright">copyright 2021 UI 테스트</h2>
+</div>
+</footer>
+ 
+</body>
+</html>
